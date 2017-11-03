@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1>폼 요소</h1>
+    <!--
+        폼요소
+            - 폼요소(form elements)는 사용자의 압력을 받는 태그들이다.
+            - <form>태그 안에 정의합니다.
+            - 폼요소들은 name 속성이 필요하다.
+            - 폼요소들
+                <input>, <select>, <textarea>, <button>
+        <form> 태그
+            - 폼요소들을 모아두는 태그다.
+            - <form>안에 다른 <form>태그를 정의할 수 없다.
+            - 
+                
+        <input> 태그
+            - <input> 태그는 textfield, checkbox, radiobutton 등의 폼요소를 정의할 때 사용한다.
+            - <input> 태그의 type 속성
+                <input type="text">        텍스트 입력필드를 생성한다.
+                <input type="password">    비밀번호 입력필드를 생성한다.
+                <input type="checkbox">    체크박스를 생성한다.(중복선택 가능)
+                <input type="radio">       라디오버튼을 생성한다.(중복선택 불가)
+                <input type="file">        첨부파일 찾아보기를 생성한다.
+                <input type="button">      버튼을 생성한다.
+                <input type="submit">      폼 입력값을 서버로 제출하는 버튼을 생성한다.
+                <input type="reset">       폼 입력값을 초기화한다.
+                <input type="hidden">      숨겨진 폼 입력값을 생성한다.
+        <select> 태그
+            - 콤보박스를 생성한다.
+        <textarea> 태그
+            - 여러 줄 입력가능한 텍스트입력필드를 생성한다.
+    -->
+    <h2>회원 가입 폼</h2>
+    <form method="post" action="register.jsp" enctype="multipart/form-data">
+        이름:<br />
+        <!--
+            post 방식
+            로그인이나 첨부파일을 첨부할때 값들을 가릴때 사용
+            get 방식 
+            post방식을 제외하고 는 모두 get방식이다.
+        -->
+        <input type="text" name="username" /> <br />
+        
+        비밀번호:<br />
+        <input type="password" name="userpwd"/> <br />
+        
+        성별: <br />
+        <input type="radio" name="gender" value="male"/>남자
+        <input type="radio" name="gender" value="female"/>여자 <br />
+        
+        결혼여부: <br />
+        <input type="radio" name="marride" value="yes"/>기혼
+        <input type="radio" name="marride" value="no"/>미혼 <br />
+        
+        달리기 경력: <br />
+        <input type="checkbox" name="distance" value="5"/>5km
+        <input type="checkbox" name="distance" value="5"/>10km
+        <input type="checkbox" name="distance" value="5"/>하프
+        <input type="checkbox" name="distance" value="5"/>풀마라톤
+        <input type="checkbox" name="distance" value="5"/>울트라마라톤 <br />
+        
+        거주지: <br />
+        <select name="location">
+            <option value="S"> 서울</option>
+            <option value="KG"> 경기</option>
+            <option value="IC"> 인천</option>
+            <option value="KW"> 강원</option>
+            <option value="CC"> 충청</option>
+            <option value="JL"> 전라</option>
+            <option value="KS"> 경상</option>
+            <option value="JJ"> 제주</option>          
+        </select> <br />
+        
+        
+        사진: <br />
+        <input type="file" name="photo"/> <br />
+        
+        소개: <br />
+        <textarea name="profile" cols="50" rows="10"></textarea> <br />
+        
+        <input type="reset" />
+        <input type="submit"/>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

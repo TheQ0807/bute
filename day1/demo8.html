@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{width:100%}
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;        
+        }
+        th{
+            text-align: left;
+        }
+        th, td {
+            padding: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: #00ffff;
+        }
+        
+        
+    </style>
+</head>
+<body>
+       <h1>셀 병합</h1>
+       
+       <h2>가로방향 셀 병합</h2>
+    <!--
+       <tb>와<th>태그에 colspan 속성을 가로방향 셀 병합 갯수를 정의한다.
+        colspan="병합할 컬럼의 갯수"
+        (tr>td{1}*4)*3
+    -->
+    <table>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        
+    </table>
+    
+    <h2>세로방향 셀 병합</h2>
+    <!--
+       <td>와<th>태그에 rowspan속성을 세로방향 셀 병합 갯수를 정의한다.
+        rowspan="병합할 행의 갯수"
+    -->
+    <table>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+    </table>
+    
+    <h2>가로/세로 셀병합</h2>
+    <table>
+        <tr>
+            <td rowspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

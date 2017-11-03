@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+      <h1>패널</h1>
+       <div class="row">
+           <div class="col-sm-4">
+               <div class="panel panel-default">
+            <div class="panel-heading">개봉영화 순위</div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>순위</th>
+                            <th>제목</th>
+                            <th>관객수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>군함도</td>
+                            <td>2,515,352 명</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>수퍼배드 3</td>
+                            <td>852,853명</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>덩캐르크</td>
+                            <td>366,254명</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel-footer">
+                <p>* 현재 순위는 2017년 8월 3일 기준입니다.</p>
+                </div>
+       </div>
+           </div>
+           <div class="col-sm-4">
+              <div class="panel panel-primary">
+            <div class="panel-heading">개봉영화 순위</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>순위</th>
+                            <th>제목</th>
+                            <th>관객수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>군함도</td>
+                            <td>2,515,352 명</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>수퍼배드 3</td>
+                            <td>852,853명</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>덩캐르크</td>
+                            <td>366,254명</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <div class="panel-footer">
+                <p>* 현재 순위는 2017년 8월 3일 기준입니다.</p>
+                </div>
+       </div> 
+           </div>
+           <div class="col-sm-4">
+              <div class="panel panel-primary">
+            <div class="panel-heading">개봉영화 순위</div>
+            <div class="panel-body">
+                <div id="chart_div"></div>
+            </div>
+            <div class="panel-footer">
+                <p>* 현재 순위는 2017년 8월 3일 기준입니다.</p>
+                </div>
+           </div>
+       </div>
+        <div class="col-sm-4">
+              <div class="panel panel-primary">
+            <div class="panel-heading">개봉영화 순위</div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">군함도</li>
+                    <li class="list-group-item">슈퍼배드 3</li>
+                    <li class="list-group-item">덩캐르크</li>
+                    <li class="list-group-item">스파이더맨 3</li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <p>* 현재 순위는 2017년 8월 3일 기준입니다.</p>
+                </div>
+           </div>
+       </div>
+        <div class="col-sm-4">
+              <div class="panel panel-primary">
+            <div class="panel-heading">개봉영화 순위</div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">군함도</li>
+                    <li class="list-group-item">슈퍼배드 3</li>
+                    <li class="list-group-item">덩캐르크</li>
+                    <li class="list-group-item">스파이더맨 3</li>
+                </ul>
+            </div>
+            <div class="panel-footer"></div>
+                <p>* 현재 순위는 2017년 8월 3일 기준입니다.</p>
+           </div>
+       </div>
+       <div class="col-sm-4">
+              <div class="panel panel-primary">
+            <div class="panel-heading">
+            <h3 class="panel-title">
+            할일 <span class="label label-info pull-right">3개</span>
+            </h3>
+            </div>
+                <ul class="list-group">
+                    <li class="list-group-item">국가 교육 보조금 받기<span class="glyphicon glyphicon-ok pull-right"></span></li>
+                    <li class="list-group-item">일을 해라 국가야!</li>
+                    <li class="list-group-item"> 머리 하기 </li>
+                    <li class="list-group-item">어머니 병원 가기</li>
+                </ul>
+           
+            <div class="panel-footer">
+                <p>* 현재 순위는 2017년 8월 3일 기준입니다.</p>
+                </div>
+           </div>
+       </div>
+    </div>
+</div>
+</body>
+<script>
+       google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Dogs');
+
+      data.addRows([
+        [0, 0],   [1, 10],  [2, 23],  [3, 17],  [4, 18],  [5, 9],
+        [6, 11],  [7, 27],  [8, 33],  [9, 40],  [10, 32], [11, 35],
+        [12, 30], [13, 40], [14, 42], [15, 47], [16, 44], [17, 48],
+        [18, 52], [19, 54], [20, 42], [21, 55], [22, 56], [23, 57],
+        [24, 60], [25, 50], [26, 52], [27, 51], [28, 49], [29, 53],
+        [30, 55], [31, 60], [32, 61], [33, 59], [34, 62], [35, 65],
+        [36, 62], [37, 58], [38, 55], [39, 61], [40, 64], [41, 65],
+        [42, 63], [43, 66], [44, 67], [45, 69], [46, 69], [47, 70],
+        [48, 72], [49, 68], [50, 66], [51, 65], [52, 67], [53, 70],
+        [54, 71], [55, 72], [56, 73], [57, 75], [58, 70], [59, 68],
+        [60, 64], [61, 60], [62, 65], [63, 67], [64, 68], [65, 69],
+        [66, 70], [67, 72], [68, 75], [69, 80]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Time'
+        },
+        vAxis: {
+          title: 'Popularity'
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+       </script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1>폼 요소 추가 연습</h1>
+   <!--
+       폼요소의 속성들
+           
+             폼요소의 공통 속성
+                   - disabled="disabled"    : 해당 폼요소를 비활성화시킨다.
+                   - readonly="readonly"   : 읽기전용으로 설정한다. 값을 변경하지 못하게 한다.
+                 
+            <input> 태그               
+                   - value="값"            : 초기값을 정의한다.   
+                                             (type="file"인 경우 보안문제로 value설정이 제한된다.)
+                   - maxlength="최대길이"    : 입력가능한 최대 문자길이를 정의한다.
+                   
+            <input type="checkbox"> <input type="radio"> 태그
+                   - checked="checked"        : 해당 라디오버튼이나 체크박스가 선택된다.
+                   
+            <select> 태그
+                   - selected="selected"      : 해당 옵션태그가 선택된다.
+                  
+                   
+   -->
+    
+    <form action="">
+        <input type="hidden" name="h1" value="1234");
+        <input type="hidden" name="h2" value="1234");
+        <input type="hidden" name="h3" value="1234");
+        <input type="hidden" name="h4" value="1234");
+>    ">
+        이름: <br />
+        <input type="text" name = "username" value="홍길동" readonly="readonly" /><br />
+       
+         아이디: <br />
+        <input type="text" name="userid" maxlength="16" /><br/>
+        
+        성별: <br />
+        <input type="radio" name="gender" value="female" checked="checked" />여자
+        <input type="radio" name="gender" value="male" />남자 <br />
+        
+        레이스: <br />
+        <input type="checkbox" name="race" value="5" />5km
+        <input type="checkbox" name="race" value="5" />10km
+        <input type="checkbox" name="race" value="5" checked="checked" />하프
+        <input type="checkbox" name="race" value="5" checked="checked" />풀
+        <input type="checkbox" name="race" value="5" />울트라 <br />
+        
+        비밀번호: <br />
+        <input type="password" name="userpwd" maxlength="12" disabled="disabled" /><br/>
+        
+        전화번호: <br />
+        <select name="phone1">
+            <option value="010"> 010</option>
+            <option value="011"> 011</option>
+            <option value="016"> 016</option>
+            <option value="017"> 017</option>
+            <option value="018"> 018</option>
+            <option value="019" selected="selected"> 019</option>
+            <option value="070"> 070</option>
+        </select> 
+        - <input type="text" name="phone2" maxlength="4"/>
+        - <input type="text" name="phone3" maxlength="4"/> <br />
+        
+        주소: <br />
+        <input type="text" name="useraddr" maxlength="12" value="서대문구" disabled="disabled" /><br/>
+        
+        사진: <br />
+        <input type="file" name="phontofile" value="a.jpg"><br />
+        
+        
+        <input type="reset" /> <!--value 값을 정해주면 초기화나 제출이라는 버튼에 이름을 바꿀수있다.-->
+        <input type="submit" />
+        
+    </form>
+    
+    
+</body>
+</html>

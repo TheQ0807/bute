@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1>html 엔티티</h1>
+   
+   <!--
+       html에는 특별한 목적으로 사용이 예약되어 있는 글자들이 있다. 빌트인엔티티
+        
+       html엔티티는 특정문자(엔티티값)를 특별한 이름(엔티티명)으로 연관지어 놓은 것이다.
+       
+       엔티티명             엔티티값            엔티티번호 숫자(아스키코드값)            설명
+       nbsp                공백문자            #160                           non-breaking space
+       lt                  <                  #60                            less than
+       gt                  >                  #62                            greater than
+       amp                 &                  #38                            ampersand
+       quot                "                  #34                            double quotation
+       apos                '                  #39                            apostrophe
+       
+       엔티티 사용하기
+           &엔티티명;
+           &#엔티티번호;
+   -->
+    <p>이번에 새로 출간한 책은&lt;html&gt;한번에 끝내기 입니다.</p>
+    <p>다음 소식입니다. 배우 &apos;송중기&apos;씨는 이번영화 &quot;군함도&quot;에 출연하여 대중들의 매우 좋은 반응을 얻고있습니다. 하지만 일각에서는 스크린 점유율이 다른 영화와 너무 크게 차이나는 것을 두고 거대 배급사의 횡포 라며 목소리를 높이고 있습니다.</p>
+<p>이번에 새로 출간한 책은&#60;html&#62;한번에 끝내기 입니다.</p>
+    <p>다음 소식입니다. 배우 <strong>&#39;송중기&#39;</strong>씨는 이번영화 <strong>&#34;군함도&#34;</strong>에 출연하여 대중들의 매우 좋은 반응을 얻고있습니다. 하지만 일각에서는 스크린 점유율이 다른 영화와 너무 크게 차이나는 것을 두고 거대 배급사의 횡포 라며 목소리를 높이고 있습니다.</p>
+    <input type="password">
+    <input type="radio"> ,<input type="text">
+    <input type="file"> ,  <input type="hidden">
+    <input type="reset"> , <input type="sumit">
+    
+    <input type="date"> , <input type="number">
+    <input type="email">
+    <textarea textarea> <select> <option option>
+    <textarea textarea> <select> <option option>
+</body>
+</html>

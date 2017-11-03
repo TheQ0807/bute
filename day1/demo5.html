@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h1>링크</h1>
+   <!--
+       <a>태그를 사용해서 링크를 정의한다.
+       <a hrdf="경로 혹은 주소">컴텐츠</a>
+           hrdf 속성을 사용해서 연결할 주소 혹은 경로를 설정한다.
+   -->
+   
+   <!--
+       주소 작성방법
+            상대 경로 주소 작성
+                    - 현재 경로를 기준으로 주소를 해석한다.
+            
+            절대 경로 주소 작성
+                    - 주소가"/"로 시작하면 무조건 절대경로 주소작성법이다.
+   -->
+   <h2>내부 자원에 링크</h2>
+       <ul>
+      <!-- 상대 주소 작성법-->
+       <li><a href="demo1.html" target="_blank">demo1 문서</a></li>   
+       <li><a href="demo2.html">demo2 문서</a></li>
+       <li><a href="demo3.html">demo3 문서</a></li>    
+       <li><a href="../day0/demo.html">demo.html</a></li>
+       
+       <-- 절대 주소 작성법-->
+       <li><a href="/day1/demo1.html">demo1 문서</a></li>
+       <li><a href="/day0/demo.html">demo 문서</a></li>
+       
+           </ul>
+   
+   <h2>외부 자원에 링크</h2>
+        <ul>
+       <li><a href="http://http://www.hungryapp.co.kr/bbs/bbs_view.php?pid=609770&bcode=onepeacetc">아카이누 </a></li>
+       </ul>
+   <h2>문서 내 링크</h2>
+   
+   
+   
+   
+    
+</body>
+</html>

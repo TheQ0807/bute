@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /** 인접 형제 선택자 h1 바로 다음에 있는 p를 선택한다.**/
+        h1+p{color:rde;}
+        
+        /**형제 선택자 h1 다음에 있는 모든 p를 선택한다. **/
+        h1~p{background-color:yellow;}
+    </style>
+</head>
+<body>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    
+    <p>단락1</p>
+    <p>단락2</p>
+    <p>단락3</p>
+    <p>단락4</p>
+    <p>단락5</p>
+    
+    <div>div안에 있는 단락</div>
+    <div>div안에 있는 단락</div>
+    <div>div안에 있는 단락</div>
+</body>
+</html>

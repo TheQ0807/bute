@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+ <div class="container">
+  <h1>폼 피드백</h1>
+          <form class="well text-right">
+           <div class="form-group has-success">
+               <label class="control-label">아이디</label>
+               <input type="text" class="form-control" name="userid" placeholder ="아이디를 입력하세요."/>
+           </div>
+              <div class="form-group has-error"><!--warning-->
+               <label class="control-label">비밀번호</label>
+               <input type="password" class="form-control" name="userid" placeholder ="비밀번호를 입력하세요."/>
+           </div>
+           <button type="submit" class="btn btn-success">로그인</button>
+           </form>          
+          <form class="well text-right">
+           <div class="form-group has-success has-feedback">
+               <label class="control-label">아이디</label>
+               <input type="text" class="form-control" name="userid" placeholder ="아이디를 입력하세요."/>
+               <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+           </div>
+              <div class="form-group has-error has-feedback"><!--warning-->
+               <label class="control-label">비밀번호</label>
+               <input type="password" class="form-control" name="userid" placeholder ="비밀번호를 입력하세요."/>
+               <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="fales"></span>
+           </div>
+           <button type="submit" class="btn btn-success">로그인</button>
+           </form>        
+           <form class="well text-right">
+           <div class="form-group has-success has-feedback">
+               <label class="control-label">아이디</label>
+               <input type="text" class="form-control" name="userid" placeholder ="아이디를 입력하세요."/>
+               <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+               <span class="help-block">아이디는 영어,대소문자,숫자만 사용가능합니다.</span>
+           </div>
+              <div class="form-group has-error has-feedback"><!--warning-->
+               <label class="control-label">비밀번호</label>
+               <input type="password" class="form-control" name="userid" placeholder ="비밀번호를 입력하세요."/>
+               <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="fales"></span>
+               <span class="help-block">비밀번호는 영어,대소문자,숫자,특수문자만 사용가능합니다.</span>
+           </div>
+           <button type="submit" class="btn btn-success">로그인</button>
+           </form>
+    </div>
+</body>
+</html>
